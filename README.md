@@ -2,16 +2,14 @@
 
 > Alternative converter between promises and callbacks
 
-TODO: improve docs
-
 ### installation
 
 ```bash
-npm install promise-util
+npm install deferinfer
 
 # -- or --
 
-yarn add promise-util
+yarn add deferinfer
 ```
 
 ```js
@@ -47,7 +45,7 @@ Async method support
 ```js
 defer(async done => {
   const result = await anotherPromise()
-  done(null, result)
+  done(null, result)promise-util
 })
 ```
 
