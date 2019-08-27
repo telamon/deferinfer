@@ -17,14 +17,14 @@ yarn add promise-util
 ```js
 const { defer, infer } = require('promise-util')
 
--- or --
+// -- or --
 
 const defer = require('promise-util').defer
 ```
 
-## `defer(callback)` => `Promise`
+## `defer(callback)` -> `Promise`
 
-Wrap callback into a promise
+Convert callback function into to promise
 
 ```js
 const result = await defer(done => someCallbackFunction(done))
@@ -51,7 +51,7 @@ defer(async done => {
 })
 ```
 
-## `infer(promise, callback)` => `Promise`
+## `infer(promise, callback)` -> `Promise`
 
 Convert promise to callback
 
