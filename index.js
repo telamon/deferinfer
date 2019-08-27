@@ -1,6 +1,7 @@
+
 module.exports = {
   defer (task) {
-    assert(typeof task === 'function')
+    if (typeof task !== 'function') throw new Error('First argument must be a callback')
     return new Promise((resolve, reject) => {
       const r = task((err, res) => {
         if (err) reject(err)

@@ -1,6 +1,6 @@
 {
   "name": "deferinfer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Alternative converter between promises and callbacks",
   "main": "index.js",
   "scripts": {
