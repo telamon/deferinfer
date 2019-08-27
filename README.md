@@ -2,8 +2,6 @@
 
 > Alternative converter between promises and callbacks
 
-TODO: improve docs
-
 ### installation
 
 ```bash
@@ -47,7 +45,7 @@ Async method support
 ```js
 defer(async done => {
   const result = await anotherPromise()
-  done(null, result)
+  done(null, result)promise-util
 })
 ```
 
