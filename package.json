@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/telamon/promise-util.git"
+    "url": "git+https://github.com/telamon/deferinfer.git"
   },
   "keywords": [
     "defer",
@@ -21,7 +21,7 @@
   "author": "Tony Ivanov <telamohn@pm.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/telamon/promise-util/issues"
+    "url": "https://github.com/telamon/deferinfer/issues"
   },
-  "homepage": "https://github.com/telamon/promise-util#readme"
+  "homepage": "https://github.com/telamon/deferinfer#readme"
 }
