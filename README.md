@@ -1,4 +1,4 @@
-# promise-util
+# deferinfer
 
 > Alternative converter between promises and callbacks
 
