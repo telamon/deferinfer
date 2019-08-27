@@ -1,0 +1,27 @@
+{
+  "name": "promise-util",
+  "version": "1.0.0",
+  "description": "Alternative converter between promises and callbacks",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telamon/promise-util.git"
+  },
+  "keywords": [
+    "defer",
+    "infer",
+    "promisify",
+    "callbackify",
+    "promise",
+    "callback"
+  ],
+  "author": "Tony Ivanov <telamohn@pm.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/telamon/promise-util/issues"
+  },
+  "homepage": "https://github.com/telamon/promise-util#readme"
+}
