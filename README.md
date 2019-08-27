@@ -7,11 +7,11 @@ TODO: improve docs
 ### installation
 
 ```bash
-npm install promise-util
+npm install deferinfer
 
 # -- or --
 
-yarn add promise-util
+yarn add deferinfer
 ```
 
 ```js
