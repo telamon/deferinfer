@@ -13,11 +13,11 @@ yarn add deferinfer
 ```
 
 ```js
-const { defer, infer } = require('promise-util')
+const { defer, infer } = require('deferinfer')
 
 // -- or --
 
-const defer = require('promise-util').defer
+const defer = require('deferinfer').defer
 ```
 
 ## `defer(callback)` -> `Promise`
