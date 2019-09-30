@@ -2,6 +2,25 @@
 
 > Alternative converter between promises and callbacks
 
+
+Let's you define promise/callback agnostic functions
+
+```js
+function add(a, b, callback) {
+  const promise = defer(done => {
+    done(null, a + b)
+  })
+  return infer(promise, callback)
+}
+
+add(5, 7, (err, sum) => {
+  console.log(sum) // => 12
+})
+
+const sum = await add(6, 4)
+console.log(sum) // => 10
+```
+
 ### installation
 
 ```bash
@@ -28,7 +47,7 @@ Convert callback function into to promise
 const result = await defer(done => someCallbackFunction(done))
 ```
 
-Properly forwards error
+Properly forwards errors
 
 ```js
 defer(done => {
@@ -60,20 +79,3 @@ const p = infer(Promise.resolve(42), (err, res) => {
 })
 ```
 
-Define promise/callback agnostic functions
-
-```js
-function add(a, b, callback) {
-  const promise = defer(done => {
-    done(null, a + b)
-  })
-  return infer(promise, callback)
-}
-
-add(5, 7, (err, sum) => {
-  console.log(sum) // => 12
-})
-
-const sum = await add(6, 4)
-console.log(sum) // => 10
-```
